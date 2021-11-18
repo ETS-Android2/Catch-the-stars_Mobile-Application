@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Catch the Ball</string>
+    <string name="game_over">GAME OVER</string>
+    <string name="_00">00</string>
+    <string name="high_score">High Score : 00</string>
+    <string name="restart">restart</string>
+    <string name="catch_the_ball">Catch the Ball</string>
+    <string name="play">PLAY</string>
+    <string name="_10_point">10 Point</string>
+    <string name="_30_point">30 Point</string>
+    <string name="score_0">Score : 0</string>
+    <string name="tap_to_start">Tap to start</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="player">Player</string>
+    <string name="score">Score</string>
+    <string name="enter">Enter</string>
+    <string name="guest">Guest</string>
+    <string name="top3">Top 3 High Score</string>
+    <string name="resume">Resume</string>
+    <string name="exit">Exit</string>
+    <string name="pause">Game is pause</string>
+    <string name="stage">Stage : 1</string>
+</resources>
