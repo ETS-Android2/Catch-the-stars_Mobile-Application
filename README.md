@@ -1,35 +1,16 @@
 # Catch-the-Ball
 Catch the Ball game implemented for Android using JAVA.
-**Note: It does not use any dependencies.**
 
-Pre-requisites
---------------
-- Android SDK v28
-- Min. Android SDK v16
+We bring existing projects to develop, improve and add functions. to the original project
 
-Features
----------------
-- Adaptive Layout
-- Open Source
-- Developer Friendly
-- Enjoy Game
+New Function List
+- New start button
+- Local Leaderboard
+- New pause look
+- Speed up when score is increase
+- Viberate when game is over
+- Top 3 score board on result page
+- Enter name to save score
 
-Extra Dependencies
-------------------
-No Extra Dependencies
+Base code credit : https://github.com/Rishabh-1999/Catch-the-Ball-Game-Android
 
-
-Preview
--------
-<table>
-  <tr>
-    <td width="500px">
-      <img src="https://user-images.githubusercontent.com/38128234/61649194-9d12b480-acce-11e9-810c-b2466977adbe.png" alt="Your image      title" width="250"/>
-    </td>
-    <td width="500px">
-      <img src="https://user-images.githubusercontent.com/38128234/61649231-b3b90b80-acce-11e9-918f-2e9287605421.png" alt="Your image title" width="250"/>
-    </td>
-  </tr>
-</table>
-
-<h2>Enjoy!!!</h2>
