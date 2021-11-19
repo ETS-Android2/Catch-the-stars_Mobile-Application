@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/start_background"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".resultActivity">
@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/game_over"
+        android:textColor="@color/colorPrimary"
         android:textSize="40sp"
         android:textStyle="bold" />
 
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/_00"
+        android:textColor="@color/colorPrimary"
         android:textSize="80sp" />
 
     <LinearLayout
@@ -35,8 +37,9 @@
             android:layout_weight="1"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="@string/guest"
             android:maxLength="8"
+            android:text="@string/guest"
+            android:textColor="@color/colorPrimary"
             tools:ignore="TouchTargetSizeCheck" />
 
         <Button
@@ -45,7 +48,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/button"
-            android:text="@string/enter" />
+            android:text="@string/enter"
+            android:textColor="@color/colorPrimary" />
     </LinearLayout>
 
     <TableRow
@@ -64,7 +68,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/top3"
-            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/colorPrimary" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -102,7 +107,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/player" />
+                    android:text="@string/player"
+                    android:textColor="@color/colorPrimary" />
 
                 <TextView
                     android:id="@+id/userTop1Score"
@@ -110,7 +116,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/score" />
+                    android:text="@string/score"
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
 
             <TextView
@@ -130,7 +137,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/player" />
+                    android:text="@string/player"
+                    android:textColor="@color/colorPrimary" />
 
                 <TextView
                     android:id="@+id/userTop2Score"
@@ -138,7 +146,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/score" />
+                    android:text="@string/score"
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
 
             <TextView
@@ -158,7 +167,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/player" />
+                    android:text="@string/player"
+                    android:textColor="@color/colorPrimary" />
 
                 <TextView
                     android:id="@+id/userTop3Score"
@@ -166,7 +176,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="@string/score" />
+                    android:text="@string/score"
+                    android:textColor="@color/colorPrimary" />
             </LinearLayout>
         </LinearLayout>
 

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/main_backgrounf"
     android:orientation="vertical"
-    android:background="@color/colorPrimary"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -17,22 +17,24 @@
         <TextView
             android:id="@+id/stageLabel"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:paddingLeft="20dp"
             android:text="@string/stage"
+            android:textColor="@color/colorPrimary"
             android:textSize="20sp" />
 
         <TextView
             android:id="@+id/scoreLabel"
             android:layout_width="0dp"
             android:layout_height="50dp"
-            android:text="@string/score_0"
             android:layout_weight="10"
-            android:textSize="20sp"
+            android:gravity="center_vertical"
             android:paddingLeft="20dp"
-            android:gravity="center_vertical"/>
+            android:text="@string/score_0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp" />
 
         <ImageView
             android:id="@+id/pauseoption"
@@ -69,14 +71,15 @@
             android:layout_marginTop="130dp"
             android:gravity="center"
             android:text="@string/tap_to_start"
+            android:textColor="@color/colorPrimary"
             android:textSize="30sp" />
 
         <ImageView
             android:id="@+id/box"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/down"
-            android:layout_gravity="center_vertical"/>
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/down" />
 
         <ImageView
             android:id="@+id/orange"
@@ -94,7 +97,8 @@
             android:id="@+id/pink"
             android:layout_width="16dp"
             android:layout_height="16dp"
-            android:src="@drawable/pink" />
+            android:src="@drawable/pink"
+            tools:srcCompat="@drawable/pink" />
 
     </FrameLayout>
 

@@ -5,7 +5,7 @@
             android:width="2.3dp"
             android:layout_width="match_parent"
             android:dashWidth="1dp"
-            android:color="#000000"/>
+            android:color="@color/colorPrimary"/>
         <padding
             android:top="-5dp"
             android:bottom="-6dp" />

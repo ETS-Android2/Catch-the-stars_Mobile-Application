@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/button"
+    android:background="@drawable/start_background"
     android:orientation="vertical"
     tools:context=".LeaderBoard">
 
@@ -12,15 +12,17 @@
         android:id="@+id/LeadHead"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="10dp"
         android:background="@drawable/border"
         android:gravity="center"
         android:text="@string/leaderboard"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#000000" />
+        android:textColor="@color/colorPrimary" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/vertical_line"
         android:orientation="horizontal">
 
         <TextView
@@ -31,13 +33,7 @@
             android:gravity="center"
             android:text="@string/player"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="#000000" />
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/vertical_line" />
+            android:textColor="#FFEB3B" />
 
         <TextView
             android:id="@+id/score"
@@ -47,7 +43,7 @@
             android:gravity="center"
             android:text="@string/score"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-            android:textColor="#000000" />
+            android:textColor="#FFEB3B" />
     </LinearLayout>
 
     <TextView

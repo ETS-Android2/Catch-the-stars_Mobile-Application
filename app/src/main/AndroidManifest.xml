@@ -13,16 +13,21 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".LeaderBoard"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|orientation|screenSize"/>
         <activity
             android:name=".resultActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|orientation|screenSize"/>
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|orientation|screenSize"/>
         <activity
             android:name=".startActivity"
-            android:screenOrientation="portrait">
+            android:screenOrientation="portrait"
+            android:configChanges="fontScale|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

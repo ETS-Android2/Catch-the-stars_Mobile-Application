@@ -1,10 +1,14 @@
 package com.example.catch_the_ball;
 
+import android.annotation.SuppressLint;
+import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -21,6 +25,11 @@ public class LeaderBoard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //set fullscreen
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_leader_board);
 
         LinearLayout main = (LinearLayout) findViewById(R.id.mainLinear);
@@ -36,6 +45,7 @@ public class LeaderBoard extends AppCompatActivity {
                 string.setGravity(Gravity.CENTER);
                 string.setLayoutParams(lparams);
                 string.setTextAppearance(R.style.TextAppearance_AppCompat_Large);
+                string.setTextColor(Color.parseColor("#FFEB3B"));
                 if(j == 0){
                     string.setText(keepUser.get(i));
                 }else{

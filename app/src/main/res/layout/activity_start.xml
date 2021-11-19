@@ -4,35 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
+    android:background="@drawable/start_background"
     android:orientation="vertical"
     tools:context=".startActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:paddingRight="10dp"
-        android:gravity="end">
+        android:gravity="end"
+        android:paddingRight="10dp">
 
         <ImageView
-            android:layout_width="50dp"
             android:id="@+id/more"
+            android:layout_width="50dp"
             android:layout_height="match_parent"
-            android:src="@drawable/more"/>
+            android:src="@drawable/more" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
         android:gravity="center"
-        android:layout_height="match_parent">
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/catch_the_ball"
             android:fontFamily="sans-serif-black"
+            android:text="@string/catch_the_star"
+            android:textColor="@color/colorPrimary"
+            android:textColorHighlight="#000000"
             android:textSize="45sp" />
 
         <TableLayout
@@ -51,6 +53,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
+                    android:textColor="@color/colorPrimary"
                     android:text="@string/_30_point"
                     android:textSize="20sp" />
 
@@ -69,6 +72,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
+                    android:textColor="@color/colorPrimary"
                     android:text="@string/_10_point"
                     android:textSize="20sp" />
 
@@ -87,6 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:paddingLeft="10dp"
+                    android:textColor="@color/colorPrimary"
                     android:text="@string/game_over"
                     android:textSize="20sp" />
             </TableRow>
@@ -99,7 +104,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:background="@drawable/button"
-            android:text="@string/play" />
+            android:minHeight="48dp"
+            android:text="@string/play"
+            android:textColor="@color/colorPrimary" />
 
         <Button
             android:id="@+id/leaderboradbutton"
@@ -107,7 +114,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
             android:background="@drawable/button"
-            android:text="@string/leaderboard" />
+            android:minHeight="48dp"
+            android:text="@string/leaderboard"
+            android:textColor="@color/colorPrimary" />
 
     </LinearLayout>
 
