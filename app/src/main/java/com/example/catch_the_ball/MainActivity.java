@@ -19,6 +19,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
@@ -74,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
     private boolean action_flag=false;
     private boolean start_flag=false;
     private boolean pause_flg=false;
+    private Animation animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,6 +88,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         sound=new SoundPlayer(this);
+
+        animation = AnimationUtils.loadAnimation(MainActivity.this,R.anim.blink_anim);
 
         scoreLable=(TextView)findViewById(R.id.scoreLabel);
         startLabel=(TextView)findViewById(R.id.startLabel);
@@ -225,6 +230,7 @@ public class MainActivity extends AppCompatActivity {
                 stageLabel.setText("Speed : "+ stage);
                 warning.setText("SPEED UP!!");
                 warning.setVisibility(View.VISIBLE);
+                warning.startAnimation(animation);
                 range += 100;
 
                 countDown = new Timer();
@@ -234,6 +240,7 @@ public class MainActivity extends AppCompatActivity {
                         handler.post(new Runnable() {
                             @Override
                             public void run() {
+                                warning.clearAnimation();
                                 warning.setVisibility(View.GONE);
                             }
                         });
